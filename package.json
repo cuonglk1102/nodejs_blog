@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/cuonglk1102/nodejs_blog#readme",
   "lint-staged":{
-    "src/**/*.{js,json,scss}":"prettier --tab-width 4 --write --single-quote --trailing-comma all"
+    "src/**/*.{js,json,scss}":"prettier src/**/*.{js,json,scss} --tab-width 4 --write --single-quote --trailing-comma all"
   },
   "husky":{
     "hooks":{
