@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
-
+mongoose.set('strictQuery', false);
 async function connect() {
     try {
         await mongoose.connect('mongodb://localhost:27017/f8_education_dev');
         console.log('====================================');
-        console.log("connect successfully");
+        console.log('connect successfully');
         console.log('====================================');
     } catch (error) {
-        console.log("connect failure");
+        console.log('connect failure');
     }
 }
 
-module.exports = {connect};
+module.exports = { connect };
